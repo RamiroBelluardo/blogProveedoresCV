@@ -1,0 +1,43 @@
+<div class="body">
+<%= render 'form' %>
+
+  <br>
+
+  <%= link_to 'Generar nuevo proveedor', new_provide_path,class:"bottonGenerateIndex" %>
+
+  <div class="tableProvides">
+
+    <table> <% @provides.each do |provide| %>
+
+     <tr >
+      <div >
+        <td>
+          <div class="infoProvider">
+            <div class="title titleIndex"><%= "Pasajes de " + provide.title %></div>
+
+            <div class="bottonPanelAction">
+
+              <div class="bottonPanelIndex"><%= link_to 'Ver ' , provide_path(provide) ,class:"link"%> </div>
+              <div class="bottonPanelIndex">|</div>
+              <div class="bottonPanelIndex"><%= link_to 'Editar', edit_provide_path(provide),class:"link" %> </div>
+              <div class="bottonPanelIndex">|</div>
+              <div class="bottonPanelIndex"><%= link_to 'Borrar', provide_path(provide) ,
+                                                  method: :delete,
+                                                  data: { confirm: 'Are you sure?' } ,class:"link"%></div>
+            </div>
+
+            <div class="contentIndex" ><%= provide.content %></div>
+          </div>
+        </td>
+
+        <td>
+          <div ><%= image_tag provide.urlImage ,:class=>"image"%></div>
+        </td>
+
+      </div>
+    </tr>
+      <% end %>
+   </table>
+
+  </div>
+</div>

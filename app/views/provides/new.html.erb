@@ -1,0 +1,52 @@
+<div class="body">
+  <%= render 'form' %>
+
+  <div class="cuerpo">
+    <%= form_with scope: :provide, url: provides_path, local: true do |form| %>
+    <div class="info">
+      <h1 class="title">Generar nuevo proveedor</h1>
+
+
+      <% if @provide.errors.any? %>
+        <div id="error_explanation">
+          <h2 class="error">
+            <%= pluralize(@provide.errors.count, "error") %> prohibited
+            this article from being saved:
+          </h2>
+
+          <ul>
+            <% @provide.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+
+
+        <div  >
+          <div class="panelFormulario "><%= form.label :titulo, class:"titleFormulario" %></div>
+          <div class="panelFormulario"><%= form.text_field :title,class:"field " %></div>
+        </div>
+      <br>
+
+        <div class="panelFormulario "><%= form.label :contenido, class:"titleFormulario" %></div>
+        <div class="panelFormulario"><%= form.text_area :content,class:"content "  %></div>
+
+      <div>
+      <br>
+
+        <div class="panelFormulario "><%= form.label :urlImage%></div>
+        <div class="panelFormulario"><%= form.text_field :urlImage %></div>
+      </div>
+    </div>
+
+      <div class="bottonPanel">
+        <%= form.submit  'Crear proveedor',class:"bottons submit"%>
+        <% end %>
+        <%= link_to 'Volver', provides_path,class:"bottonBack" %>
+      </div >
+
+  </div>
+
+</div>

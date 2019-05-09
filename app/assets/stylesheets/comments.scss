@@ -1,0 +1,40 @@
+// Place all the styles related to the Comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.bottonComment {
+  background-color: #E94E1B;
+  width: 360px;
+  color: white;
+  border: none;
+  text-align: center;
+  font-size: 21px ;
+  font-family: "Myriad Pro", sans serif;
+  display: inline-block;
+  border-radius: 8px;
+  height: 40px;
+
+}
+.panelComment{
+  background: #E5E7EB;
+}
+.comment{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.bottonShow{
+  padding-left: 30%;
+}
+.titleAndBackShow{
+  display: inline;
+}
+.comments{
+  display:inline;
+}
+.commentPanel{
+  background: #c9d2e0;
+}
+.contentShowForm{
+  width: 800%;
+  height: 265px;
+  border-radius: 6px;
+}

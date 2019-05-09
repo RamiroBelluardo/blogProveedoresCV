@@ -1,0 +1,191 @@
+// Place all the styles related to the Provides controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.portada {
+  background-color: #E94E1B;
+  width: 100%;
+}
+
+.logo{
+  background-color: #FFFFFF;
+  width: 30%;
+  margin-left: 35%;
+}
+.description {
+
+  padding: 5%;
+  color: #FFFFFF ;
+  font-family: "Open Sans",sans serif;
+  font-size: 20px;
+  text-align : left;
+  margin-left: 14%;
+  margin-right: 14%;
+}
+.back{
+  background-color: #E5E7EB;
+}
+
+.info {
+  padding-top: 1%;
+  margin-left:25%;
+  width: 100%;
+}
+
+.panelFormulario {
+  display: inline-block;
+  width: 9%;
+  vertical-align: top;
+}
+
+.title {
+  color: #000000;
+  font-family: "Open Sans", sans serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+.content{
+  width: 550%;
+  height: 265px;
+  border-radius: 6px;
+}
+
+.bottonPanel{
+  margin-top: 1%;
+  margin-left: 35%;
+  padding-bottom: 1%;
+}
+
+.submit {
+    background-color:#E94E1B;
+    width:364px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 21px;
+    font-family: "Myriad Pro", sans serif;
+    display: inline-block;
+    border-radius: 8px;
+  }
+.bottonBack {
+  background-color:#979797;
+  width:364px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: white;
+  border: none;
+  text-align: center;
+  font-size: 21px;
+  font-family: "Myriad Pro", sans serif;
+  display: inline-block;
+  border-radius: 8px;
+}
+.cuerpo{
+  background-color: #E5E7EB;
+}
+.error {
+  color: #000000;
+  font-family: "Open Sans", sans serif;
+  font-weight: bold;
+  font-size: 22px;
+
+}
+
+//index
+
+.bodyIndex {
+  padding-left : 20%;
+}
+.bottonPanelIndex {
+
+  color:#BCBCBC;
+  text-decoration: none;
+  display: inline;
+}
+.bottonGenerateIndex {
+  padding-left: 71%;
+  color:#BCBCBC;
+  text-decoration: none;
+  vertical-align: bottom;
+  font-weight: bold;
+  font-size: 18px;
+}
+.tableProvides{
+  padding-top: 3%;
+  padding-left: 17%
+}
+.link {
+  color: #BCBCBC;
+  font-size: 18 px;
+  font-family: "Open Sans", sans serif;
+  text-decoration: none;
+}
+.image{
+  width: 528px;
+  height: 264px;
+}
+.infoProvider{
+  width: 700px;
+  height: 264px;
+}
+.bottonPanelAction{
+  display: inline-block;
+  padding-left: 20%;
+}
+
+.titleIndex{
+  display: inline-block;
+  width: 350px;
+}
+.contentIndex {
+  color: #000000;
+  font-family: "Open Sans", sans serif;
+  font-weight: normal;
+  font-size: 20px;
+}
+.bodyIndex{
+  padding-left: 12%;
+  padding-right: 12%;
+}
+.row{
+  padding-bottom: 22%;
+}
+
+//show
+
+.imageShow{
+  width: 1100px;
+  height: auto;
+  padding-left: 20%;
+
+}
+.showInfoPanel{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.titleShow{
+  width: 1034px;
+  display: inline-block;
+
+}
+.backShow{
+  color: #BCBCBC;
+  font-weight: bold;
+  font-size: 18 px;
+  font-family: "Open Sans", sans serif;
+  text-decoration: none;
+  display:inline-block;
+
+
+}
+.contentShow{
+  color: #000000;
+  font-family: "Open Sans", sans serif;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: left;
+}
+

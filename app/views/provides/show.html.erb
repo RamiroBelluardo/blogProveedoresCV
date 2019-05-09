@@ -1,0 +1,66 @@
+<div class="body">
+  <img src ="https://cace-static.s3-us-west-2.amazonaws.com/uploads/socios/1214/clubviajando-logo-baja-cace.png" class="logo">
+    <div ><%= image_tag @provide.urlImage ,:class=>"image imageShow"%></div>
+      <div class="showInfoPanel">
+
+        <div class="titleAndBackShow">
+          <br>
+          <div class="title titleShow">
+            <strong>Pasajes de
+              <%= @provide.title %></strong>
+          </div>
+
+          <%= link_to 'Volver', provides_path, :class=>"backShow" %>
+        </div>
+
+      <p class="contentShow">
+        <%= @provide.content %></p>
+      </div>
+
+      <div class= "panelComment">
+        <div class="comment">
+          <br>
+          <div class="title ">
+            <strong>Comentarios del servicio
+              <%= @provide.title %></strong>
+          </div>
+          <br>
+          <br>
+
+          <div class="commentPanel"><% @provide.comments.each do |comment| %>
+
+              <br>
+              <div>
+                <strong><div class="comments"><%= comment.name %></div>:</strong>
+                <div class="comments"><%= comment.body %></div>
+              </div>
+            <% end %>
+
+          </div>
+          <br>
+          <br>
+        <%= form_with(model: [ @provide,@provide.comments.build ], local: true) do |form| %>
+
+          <div>
+            <div class="panelFormulario "> <%= form.label :Nombre %></div>
+            <div class="panelFormulario "><%= form.text_field :name %></div>
+          </div>
+
+          <br>
+
+          <div>
+            <div class="panelFormulario"><%= form.label :Comentario %></div>
+            <div class="panelFormulario"><%= form.text_area :body, class:" contentShowForm " %></div>
+          </div>
+
+          <br>
+
+          <div class="bottonShow">
+            <%= form.submit 'Dejanos tu opinión',class:"bottonComment"%>
+          </div>
+        </div>
+      </div>
+
+  <% end %>
+
+</div>
